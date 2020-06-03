@@ -20,7 +20,7 @@ To use this package, it will be necessary to have a credential. These are referr
 * iv
 
 in your root project, include config file "SendMeConfig.ini".
-You can download file in this repo.
+You can download file inside "tests" directory.
 
 Please contact Administrator Faspay to create the required credentials.
 
