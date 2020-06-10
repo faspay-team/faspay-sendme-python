@@ -32,7 +32,7 @@ pip install FaspaySendme
 Install Dependencies package
 ```sh
 pip install requests
-pip install pycrytodome
+pip install pycryptodome
 ```
 ## Usage
 ### Register Flow
