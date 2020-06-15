@@ -1,7 +1,7 @@
 [![N|Solid](https://faspay.co.id/docs/sendme/images/sendMe-new.png)](https://faspay.co.id/docs/index-sendme.html#faspay-sendme) 
 ## Welcome To Faspay SendMe
 
-This package provides Faspay SendMe 1.1 support for the Python Language.
+This package provides Faspay SendMe 1.2 support for the Python Language.
 
 ## Requirements
 
@@ -40,6 +40,7 @@ pip install pycryptodome
 from FaspaySendme import Api
 
 response = Api.Services.register(Api.Services, {
+    "virtual_account"           : "9920015307",
     "beneficiary_account"       : "10000005",
     "beneficiary_account_name" 	: "Faspay Dev 5",
     "beneficiary_va_name"       : "Faspay Lib Tst",
@@ -47,7 +48,7 @@ response = Api.Services.register(Api.Services, {
     "beneficiary_bank_branch" 	: "KCP Pasar Baru",
     "beneficiary_region_code" 	: "0102",
     "beneficiary_country_code" 	: "ID",
-    "beneficiary_purpose_code" 	: "1",
+    "beneficiary_purpose_code" 	: "1"
 })
 ```
 
@@ -56,8 +57,9 @@ response = Api.Services.register(Api.Services, {
 from FaspaySendme import Api
 
 response = Api.Services.mutasi(Api.Services, {
-    "start_date" : "2019-02-01",
-    "end_date" 	 : "2019-02-18"
+    "virtual_account"   : "9920015307",
+    "start_date"        : "2019-02-01",
+    "end_date" 	        : "2019-02-18"
 })
 ```
 

@@ -131,9 +131,11 @@ def curl(self):
 
     self._info["headers"] = _headers
 
+    if _reqx == None: self._reqx = _reqd
+
     r = requests.post(_url, json=_reqx, headers=_headers)
     result = r.text
 
-    if r.status_code != 200: result = json.dumps({"error":True, "message":r.status_code})
+    if r.status_code != 200: result = json.dumps({"error":True, "message":"faspay.sendme.http.code " + str(r.status_code)})
 
     self._rspx = result

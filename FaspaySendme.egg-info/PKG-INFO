@@ -1,7 +1,7 @@
 Metadata-Version: 2.1
 Name: FaspaySendme
-Version: 1.1
-Summary: This package provides Faspay SendMe 1.1 support for the Python Language.
+Version: 1.2
+Summary: This package provides Faspay SendMe 1.2 support for the Python Language.
 Home-page: https://github.com/faspay-team/faspay-sendme-python
 Author: Vincentius Setyo K
 Author-email: vincentius.setyo@faspay.co.id
@@ -9,7 +9,7 @@ License: MIT
 Description: [![N|Solid](https://faspay.co.id/docs/sendme/images/sendMe-new.png)](https://faspay.co.id/docs/index-sendme.html#faspay-sendme) 
         ## Welcome To Faspay SendMe
         
-        This package provides Faspay SendMe 1.1 support for the Python Language.
+        This package provides Faspay SendMe 1.2 support for the Python Language.
         
         ## Requirements
         
@@ -28,7 +28,7 @@ Description: [![N|Solid](https://faspay.co.id/docs/sendme/images/sendMe-new.png)
         * iv
         
         in your root project, include config file "SendMeConfig.ini".
-        You can download file in this repo.
+        You can download file inside "tests" directory.
         
         Please contact Administrator Faspay to create the required credentials.
         
@@ -39,8 +39,8 @@ Description: [![N|Solid](https://faspay.co.id/docs/sendme/images/sendMe-new.png)
         ```
         Install Dependencies package
         ```sh
-        * pip install requests
-        * pip install pycrytodome
+        pip install requests
+        pip install pycryptodome
         ```
         ## Usage
         ### Register Flow
@@ -48,14 +48,15 @@ Description: [![N|Solid](https://faspay.co.id/docs/sendme/images/sendMe-new.png)
         from FaspaySendme import Api
         
         response = Api.Services.register(Api.Services, {
-            "beneficiary_account" 		: "10000005",
-        	"beneficiary_account_name" 	: "Faspay Dev 5",
-        	"beneficiary_va_name" 		: "Faspay Lib Tst",
-        	"beneficiary_bank_code" 	: "008",
-        	"beneficiary_bank_branch" 	: "KCP Pasar Baru",
-        	"beneficiary_region_code" 	: "0102",
-        	"beneficiary_country_code" 	: "ID",
-        	"beneficiary_purpose_code" 	: "1",
+            "virtual_account"           : "9920015307",
+            "beneficiary_account"       : "10000005",
+            "beneficiary_account_name" 	: "Faspay Dev 5",
+            "beneficiary_va_name"       : "Faspay Lib Tst",
+            "beneficiary_bank_code" 	: "008",
+            "beneficiary_bank_branch" 	: "KCP Pasar Baru",
+            "beneficiary_region_code" 	: "0102",
+            "beneficiary_country_code" 	: "ID",
+            "beneficiary_purpose_code" 	: "1"
         })
         ```
         
@@ -64,8 +65,9 @@ Description: [![N|Solid](https://faspay.co.id/docs/sendme/images/sendMe-new.png)
         from FaspaySendme import Api
         
         response = Api.Services.mutasi(Api.Services, {
-            "start_date" : "2019-02-01",
-        	"end_date" 	 : "2019-02-18"
+            "virtual_account"   : "9920015307",
+            "start_date"        : "2019-02-01",
+            "end_date" 	        : "2019-02-18"
         })
         ```
         
