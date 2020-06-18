@@ -1,4 +1,9 @@
 build/
-!.gitignore
+.gitignore
 dist/
 FaspaySendme/
+.idea
+FaspaySendme.egg-info/
+venv/
+.pypirc
+setup.py
