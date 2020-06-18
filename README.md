@@ -34,6 +34,13 @@ Install Dependencies package
 pip install requests
 pip install pycryptodome
 ```
+
+## Upgrade Latest Version
+To upgrade use this command:
+```sh
+pip install --upgrade FaspaySendme
+```
+
 ## Usage
 ### Register Flow
 ```python
