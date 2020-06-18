@@ -7,3 +7,4 @@ FaspaySendme.egg-info/
 venv/
 .pypirc
 setup.py
+test/SendMeConfig.ini
