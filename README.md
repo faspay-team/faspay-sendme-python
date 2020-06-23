@@ -1,7 +1,7 @@
 [![N|Solid](https://faspay.co.id/docs/sendme/images/sendMe-new.png)](https://faspay.co.id/docs/index-sendme.html#faspay-sendme) 
 ## Welcome To Faspay SendMe
 
-This package provides Faspay SendMe 1.3 support for the Python Language.
+This package provides Faspay SendMe 1.4 support for the Python Language.
 
 ## Requirements
 
